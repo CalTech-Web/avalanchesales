@@ -17,6 +17,14 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-orange/15 blur-3xl"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-blue-accent/10 blur-3xl"
+        />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div>
             <p className="inline-block rounded-full bg-orange/10 px-4 py-1.5 text-sm font-semibold text-orange">
