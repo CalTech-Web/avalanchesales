@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { company, footerInfoLinks, footerQuickLinks } from "@/lib/data";
 
@@ -7,13 +6,9 @@ export default function Footer() {
     <footer className="bg-near-black text-zinc-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <Image
-            src="/images/logos/avalanche-logo-800x400.png"
-            alt="Avalanche Sales"
-            width={200}
-            height={100}
-            className="h-12 w-auto brightness-0 invert"
-          />
+          <span className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
+            Avalanche<span className="text-orange">Sales</span>
+          </span>
           <p className="mt-4 max-w-sm text-sm leading-6 text-zinc-400">
             {company.tagline} A US based outsourced sales and marketing
             agency providing exclusive, pay-per-lead customer acquisition

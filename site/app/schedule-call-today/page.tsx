@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import { company } from "@/lib/data";
 
@@ -44,13 +43,8 @@ export default function ScheduleCallPage() {
             </ul>
 
             <div className="mt-10 flex items-center gap-4">
-              <div className="relative h-12 w-12 flex-shrink-0">
-                <Image
-                  src="/images/logos/avalanche-logo-square-orange.png"
-                  alt="Avalanche Sales"
-                  fill
-                  className="object-contain"
-                />
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange text-lg font-extrabold text-white">
+                A
               </div>
               <div>
                 <p className="text-sm font-semibold text-near-black">

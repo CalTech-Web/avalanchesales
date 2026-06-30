@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { company, nav } from "@/lib/data";
@@ -12,14 +11,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
-          <Image
-            src="/images/logos/avalanche-logo-800x400.png"
-            alt="Avalanche Sales"
-            width={200}
-            height={100}
-            priority
-            className="h-12 w-auto sm:h-14"
-          />
+          <span className="text-2xl font-extrabold tracking-tight text-near-black sm:text-3xl">
+            Avalanche<span className="text-orange">Sales</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
