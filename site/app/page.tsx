@@ -231,6 +231,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Key Differentiators"
             title="What Makes Avalanche Sales Different"
+            description="The combination of exclusivity, speed, and AI validation that keeps client pipelines full."
             light
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2">

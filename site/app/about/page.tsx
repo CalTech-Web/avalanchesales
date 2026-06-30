@@ -89,6 +89,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="How It Started"
             title="Built on Direct Response, Grown Into Multi-Channel AI"
+            description="A quarter century of mergers and new channels, all in service of one focus, turning prospects into customers."
           />
           <div className="mt-14 grid items-center gap-12 lg:grid-cols-2">
             <div className="relative mx-auto w-full max-w-md lg:max-w-full">
@@ -154,6 +155,10 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Let&apos;s Build Your Predictable Pipeline
           </h2>
+          <p className="mt-4 text-lg leading-7 text-orange-50">
+            Book a free, no obligation 30 minute discovery call to map out
+            your exclusive lead plan.
+          </p>
           <div className="mt-8">
             <CtaButton href="/schedule-call-today/" variant="white">
               Schedule My Free Call

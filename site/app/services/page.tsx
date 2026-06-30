@@ -102,6 +102,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Core Inside Sales Services"
             title="A Full Sales Engine, Not Just Leads"
+            description="From first outreach to closed deal, our team manages the entire pipeline on your behalf."
             light
           />
           <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -124,6 +125,7 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Multi-Channel Reach"
             title="Platforms We Manage for You"
+            description="One engagement, every major channel, all working together to fill your pipeline."
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {platforms.map((platform) => (
