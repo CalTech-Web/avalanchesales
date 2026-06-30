@@ -52,10 +52,10 @@ export default function Home() {
             <Image
               src="/images/products/avalanche-web-lady.png"
               alt="Avalanche Sales lead generation specialist"
-              width={700}
-              height={700}
+              width={483}
+              height={480}
               priority
-              className="h-auto w-full"
+              className="mx-auto h-auto w-full max-w-md"
             />
           </div>
         </div>
@@ -141,13 +141,16 @@ export default function Home() {
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {processStages.map((stage) => (
               <div key={stage.title} className="text-center">
-                <div className="relative mx-auto h-40 w-40">
-                  <Image
-                    src={stage.image}
-                    alt={stage.title}
-                    fill
-                    className="object-contain"
-                  />
+                <div className="relative mx-auto flex h-40 w-40 items-center justify-center rounded-full bg-orange/8">
+                  <div className="relative h-28 w-28 overflow-hidden rounded-full shadow-md ring-4 ring-white">
+                    <Image
+                      src={stage.image}
+                      alt={stage.title}
+                      fill
+                      sizes="112px"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-orange">
                   {stage.stage}
