@@ -10,28 +10,46 @@ export default function ContactForm({
   submitLabel = "Send Message",
 }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
-    );
-    window.location.href = `mailto:info@AvalancheSales.com?subject=${encodeURIComponent(
-      "Website Inquiry"
-    )}&body=${body}`;
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("https://forms.caltechweb.com/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          site: "avalanchesales.com",
+          name,
+          email,
+          message: phone ? `Phone: ${phone}\n\n${message}` : message,
+          source: "contact-page",
+        }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setSubmitted(true);
+    } catch {
+      setError(
+        "Something went wrong sending your message. Please email info@AvalancheSales.com or call 877.499.9111."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
     return (
       <div className="rounded-xl border border-orange/30 bg-orange/5 p-6 text-center">
         <p className="font-semibold text-near-black">
-          Thanks for reaching out. Your email client should now be open, send
-          it through and our team will respond shortly.
+          Thanks for reaching out. Our team has received your message and will
+          respond shortly.
         </p>
       </div>
     );
@@ -90,11 +108,15 @@ export default function ContactForm({
           className="mt-1.5 w-full rounded-md border border-zinc-300 px-4 py-2.5 text-sm focus:border-orange focus:outline-none"
         />
       </div>
+      {error && (
+        <p className="text-sm font-medium text-red-600">{error}</p>
+      )}
       <button
         type="submit"
-        className="w-full rounded-md bg-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-dark sm:w-auto"
+        disabled={submitting}
+        className="w-full rounded-md bg-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-dark disabled:opacity-60 sm:w-auto"
       >
-        {submitLabel}
+        {submitting ? "Sending..." : submitLabel}
       </button>
     </form>
   );
