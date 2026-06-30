@@ -61,7 +61,7 @@ export default function ScheduleCallPage() {
           </div>
 
           <div className="rounded-xl border border-zinc-200 p-6 sm:p-8">
-            <ContactForm submitLabel="Click Here to Schedule Call" />
+            <ContactForm submitLabel="Schedule My Free Call" />
           </div>
         </div>
       </div>

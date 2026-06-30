@@ -156,7 +156,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-8">
             <CtaButton href="/schedule-call-today/" variant="white">
-              Click Here to Schedule Call
+              Schedule My Free Call
             </CtaButton>
           </div>
         </div>
