@@ -6,3 +6,4 @@ site/out/
 site/tmp/
 site/.vercel/
 site/*.tsbuildinfo
+.vercel
