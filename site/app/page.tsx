@@ -112,9 +112,11 @@ export default function Home() {
                     {option.bullets.map((bullet) => (
                       <li
                         key={bullet}
-                        className="flex items-start gap-2 text-sm text-zinc-700"
+                        className="flex items-start gap-2.5 text-sm text-zinc-700"
                       >
-                        <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange" />
+                        <div className="mt-0.5 flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
+                          <ServiceIcon name="check" className="h-2.5 w-2.5" />
+                        </div>
                         {bullet}
                       </li>
                     ))}
