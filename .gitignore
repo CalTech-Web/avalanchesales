@@ -7,3 +7,6 @@ site/tmp/
 site/.vercel/
 site/*.tsbuildinfo
 .vercel
+
+# screenshots / scratch
+tmp/
