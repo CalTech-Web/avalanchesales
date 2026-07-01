@@ -1,0 +1,58 @@
+[
+  {
+    "page": "/",
+    "status": 200,
+    "title": "Avalanche Sales | Exclusive Leads. Real Customers. Predictable Growth.",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/about/",
+    "status": 200,
+    "title": "About Us | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/services/",
+    "status": 200,
+    "title": "Services | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/contact/",
+    "status": 200,
+    "title": "Contact Us | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/schedule-call-today/",
+    "status": 200,
+    "title": "Schedule A Call Today | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/privacy-policy/",
+    "status": 200,
+    "title": "Privacy Policy | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  {
+    "page": "/terms-and-conditions/",
+    "status": 200,
+    "title": "Terms and Conditions | Avalanche Sales",
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedRequests": []
+  }
+]

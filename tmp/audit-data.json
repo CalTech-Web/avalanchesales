@@ -1,0 +1,458 @@
+{
+  "home": {
+    "url": "https://avalanchesales.vercel.app/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/home-375.png",
+        "brokenImages": [
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fattract-image.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fengage-image.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fconvert-image.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fgoogle-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Flinkedin-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Ffacebook-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Finstagram-ads-icon.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fbing-ads-icon.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fyoutube-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w"
+        ],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/home-768.png",
+        "brokenImages": [
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w"
+        ],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": [
+            {
+              "tag": "DIV",
+              "cls": "pointer-events-none absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-blue-ac",
+              "right": 896,
+              "width": 384
+            }
+          ]
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/home-1280.png",
+        "brokenImages": [
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w"
+        ],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "about": {
+    "url": "https://avalanchesales.vercel.app/about/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/about-375.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/about-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/about-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "services": {
+    "url": "https://avalanchesales.vercel.app/services/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/services-375.png",
+        "brokenImages": [
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fgoogle-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Flinkedin-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Ffacebook-ads-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Finstagram-ads-icon.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fbing-ads-icon.jpg&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w",
+          "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fyoutube-icon.png&w=3840&q=75&dpl=dpl_G2SqUHtxMW4pvvp2E2easEhtCL3w"
+        ],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/services-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/services-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "contact": {
+    "url": "https://avalanchesales.vercel.app/contact/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/contact-375.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/contact-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/contact-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "schedule-call-today": {
+    "url": "https://avalanchesales.vercel.app/schedule-call-today/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/schedule-call-today-375.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/schedule-call-today-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/schedule-call-today-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "privacy-policy": {
+    "url": "https://avalanchesales.vercel.app/privacy-policy/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/privacy-policy-375.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/privacy-policy-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/privacy-policy-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  },
+  "terms-and-conditions": {
+    "url": "https://avalanchesales.vercel.app/terms-and-conditions/",
+    "viewports": {
+      "375": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/terms-and-conditions-375.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 375,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "768": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/terms-and-conditions-768.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 781,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      },
+      "1280": {
+        "httpStatus": 200,
+        "screenshot": "/Users/brandonhopkins/Projects/avalanchesales/tmp/terms-and-conditions-1280.png",
+        "brokenImages": [],
+        "overflow": {
+          "docWidth": 1280,
+          "overflowing": []
+        },
+        "consoleErrors": [],
+        "failedRequests": []
+      }
+    },
+    "consoleErrors": [],
+    "failedRequests": [],
+    "brokenImages": [],
+    "internalLinks": [
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/about/",
+      "https://avalanchesales.vercel.app/services/",
+      "https://avalanchesales.vercel.app/schedule-call-today/",
+      "https://avalanchesales.vercel.app/contact/",
+      "https://avalanchesales.vercel.app/privacy-policy/",
+      "https://avalanchesales.vercel.app/terms-and-conditions/",
+      "https://caltechweb.com/"
+    ],
+    "httpStatus": 200
+  }
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "width": 375,
+    "page": "/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": [
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fattract-image.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fengage-image.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fconvert-image.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fgoogle-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Flinkedin-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Ffacebook-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Finstagram-ads-icon.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fbing-ads-icon.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fyoutube-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y"
+    ]
+  },
+  {
+    "width": 375,
+    "page": "/about/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 375,
+    "page": "/services/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": [
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fgoogle-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Flinkedin-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Ffacebook-ads-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Finstagram-ads-icon.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fbing-ads-icon.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fyoutube-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y"
+    ]
+  },
+  {
+    "width": 375,
+    "page": "/contact/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 375,
+    "page": "/schedule-call-today/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 375,
+    "page": "/privacy-policy/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 375,
+    "page": "/terms-and-conditions/",
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": [
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fbing-ads-icon.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fproducts%2Fyoutube-icon.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y"
+    ]
+  },
+  {
+    "width": 768,
+    "page": "/about/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/services/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/contact/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/schedule-call-today/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/privacy-policy/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 768,
+    "page": "/terms-and-conditions/",
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": [
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-healthcare.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-finance.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-coaching.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-real-estate.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-saas.jpg&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y",
+      "https://avalanchesales.vercel.app/_next/image/?url=%2Fimages%2Fgallery%2Fcase-study-hvac.png&w=3840&q=75&dpl=dpl_EQvt7edPHYhk5unLnQeaabe1uD6Y"
+    ]
+  },
+  {
+    "width": 1280,
+    "page": "/about/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/services/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/contact/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/schedule-call-today/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/privacy-policy/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  },
+  {
+    "width": 1280,
+    "page": "/terms-and-conditions/",
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "hasHorizontalScroll": false,
+    "brokenImages": []
+  }
+]

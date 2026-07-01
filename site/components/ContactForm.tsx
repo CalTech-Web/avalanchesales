@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Script from "next/script";
+
+const TURNSTILE_SITEKEY = "0x4AAAAAACyyz_lqkwF9Wvoh";
 
 type ContactFormProps = {
   submitLabel?: string;
@@ -21,6 +24,17 @@ export default function ContactForm({
     e.preventDefault();
     setSubmitting(true);
     setError("");
+    const turnstileToken =
+      (
+        document.querySelector(
+          '[name="cf-turnstile-response"]'
+        ) as HTMLInputElement | null
+      )?.value || "";
+    if (!turnstileToken) {
+      setError("Please complete the verification challenge and try again.");
+      setSubmitting(false);
+      return;
+    }
     try {
       const res = await fetch("https://forms.caltechweb.com/api/submit", {
         method: "POST",
@@ -31,6 +45,7 @@ export default function ContactForm({
           email,
           message: phone ? `Phone: ${phone}\n\n${message}` : message,
           source: "contact-page",
+          turnstileToken,
         }),
       });
       if (!res.ok) throw new Error("Request failed");
@@ -39,6 +54,7 @@ export default function ContactForm({
       setError(
         "Something went wrong sending your message. Please email info@AvalancheSales.com or call 877.499.9111."
       );
+      (window as unknown as { turnstile?: { reset: () => void } }).turnstile?.reset();
     } finally {
       setSubmitting(false);
     }
@@ -57,6 +73,10 @@ export default function ContactForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        strategy="afterInteractive"
+      />
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="text-sm font-medium text-near-black">
@@ -108,6 +128,7 @@ export default function ContactForm({
           className="mt-1.5 w-full rounded-md border border-zinc-300 px-4 py-2.5 text-sm focus:border-orange focus:outline-none"
         />
       </div>
+      <div className="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} />
       {error && (
         <p className="text-sm font-medium text-red-600">{error}</p>
       )}
