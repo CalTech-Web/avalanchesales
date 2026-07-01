@@ -126,26 +126,32 @@ export const coreServices = [
   {
     title: "Lead Generation & Prospecting",
     description: "AI driven targeting and multi-channel outreach to find your ideal prospects.",
+    icon: "search",
   },
   {
     title: "Sales Engagement & Nurturing",
     description: "Multi-touch sequences across calls, emails, and social that advance prospects through every pipeline stage.",
+    icon: "chat",
   },
   {
     title: "Sales Presentations & Consultations",
     description: "Discovery calls and product demos delivered on your behalf, by an experienced team.",
+    icon: "presentation",
   },
   {
     title: "Closing & Conversion Management",
     description: "Proposal follow-up, negotiation, and deal closure handled with a focus on results.",
+    icon: "handshake",
   },
   {
     title: "CRM Management, Analytics & Reporting",
     description: "CRM setup and automation paired with performance dashboards so you always know what is working.",
+    icon: "chart",
   },
   {
     title: "Marketing Integration & Campaign Support",
     description: "Integrated campaigns that continuously feed new prospects into your funnel.",
+    icon: "megaphone",
   },
 ];
 
@@ -153,18 +159,22 @@ export const customerAcquisitionPillars = [
   {
     title: "Sales Funnels",
     description: "AI optimized, high converting funnels deployed across multiple channels.",
+    icon: "funnel",
   },
   {
     title: "Targeted Landing Pages",
     description: "Industry specific landing pages with AI driven validation and real-time lead routing.",
+    icon: "target",
   },
   {
     title: "Sales Consulting",
     description: "In-house sales team training, AI system implementation, and CRM and software integration.",
+    icon: "chat",
   },
   {
     title: "AI Automation",
     description: "Intelligent lead routing, real-time engagement, automated follow-ups, and pipeline optimization.",
+    icon: "bolt",
   },
 ];
 

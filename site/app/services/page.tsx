@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
+import ServiceIcon from "@/components/ServiceIcon";
 import {
   coreServices,
   customerAcquisitionPillars,
@@ -116,7 +117,10 @@ export default function ServicesPage() {
                 key={pillar.title}
                 className="rounded-xl border border-zinc-200 p-6"
               >
-                <h3 className="text-lg font-bold text-near-black">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
+                  <ServiceIcon name={pillar.icon} className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold text-near-black">
                   {pillar.title}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-zinc-600">
@@ -139,7 +143,10 @@ export default function ServicesPage() {
           <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {coreServices.map((service) => (
               <div key={service.title} className="rounded-xl bg-white/5 p-6">
-                <h3 className="text-lg font-bold text-white">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/15 text-orange">
+                  <ServiceIcon name={service.icon} className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 text-lg font-bold text-white">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-zinc-300">
