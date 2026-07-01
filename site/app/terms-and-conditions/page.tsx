@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
 import { company } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Terms and Conditions",
   description: "Terms and Conditions for Avalanche Marketing Agency.",
-  alternates: {
-    canonical: "/terms-and-conditions/",
-  },
-};
+  path: "/terms-and-conditions/",
+});
 
 export default function TermsPage() {
   return (

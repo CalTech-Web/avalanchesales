@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
@@ -8,15 +7,14 @@ import {
   leadOptions,
   platforms,
 } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Services",
   description:
     "Exclusive lead generation, ready to buy leads, private lead generation systems, and full customer acquisition systems across Google, LinkedIn, Facebook, Instagram, Bing, and YouTube.",
-  alternates: {
-    canonical: "/services/",
-  },
-};
+  path: "/services/",
+});
 
 const servicesJsonLd = {
   "@context": "https://schema.org",

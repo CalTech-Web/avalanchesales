@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import CtaButton from "@/components/CtaButton";
 import { company } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact Us",
   description:
     "Get in touch with Avalanche Sales to start exclusive, AI validated lead generation for your business.",
-  alternates: {
-    canonical: "/contact/",
-  },
-};
+  path: "/contact/",
+});
 
 export default function ContactPage() {
   return (

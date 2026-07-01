@@ -1,13 +1,11 @@
-import type { Metadata } from "next";
 import { company } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Privacy Policy",
   description: "Privacy Policy for Avalanche Marketing Agency.",
-  alternates: {
-    canonical: "/privacy-policy/",
-  },
-};
+  path: "/privacy-policy/",
+});
 
 export default function PrivacyPolicyPage() {
   return (

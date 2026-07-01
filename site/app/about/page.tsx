@@ -1,17 +1,15 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import { stats } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About Us",
   description:
     "25+ years of combined sales, marketing, and direct response experience. Learn how Avalanche Sales became a multi-channel customer acquisition agency.",
-  alternates: {
-    canonical: "/about/",
-  },
-};
+  path: "/about/",
+});
 
 const timeline = [
   {

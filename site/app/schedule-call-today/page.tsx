@@ -1,15 +1,13 @@
-import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import { company } from "@/lib/data";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Schedule A Call Today",
   description:
     "Book a free, no obligation 30 minute discovery call with Avalanche Sales and see how fast we can launch your exclusive lead campaign.",
-  alternates: {
-    canonical: "/schedule-call-today/",
-  },
-};
+  path: "/schedule-call-today/",
+});
 
 const reasons = [
   "Free, no obligation 30 minute discovery call",
