@@ -112,14 +112,14 @@ export const stats = [
 ];
 
 export const differentiators = [
-  "No monthly contracts, pay-per-lead model",
-  "3 to 7 day launch cycle to get campaigns live",
-  "Leads are 100% exclusive, never shared or resold to competitors",
-  "AI validated prospects delivered in real time, often within minutes",
-  "Scalable, performance based pricing tied to client revenue",
-  "Single focused objective: lead generation and conversion",
-  "25+ years of combined sales, marketing, and direct response experience dating to 1999",
-  "Multi-channel reach across Google, LinkedIn, Facebook, Instagram, Bing, and YouTube under one engagement",
+  { text: "No monthly contracts, pay-per-lead model", icon: "dollar" },
+  { text: "3 to 7 day launch cycle to get campaigns live", icon: "bolt" },
+  { text: "Leads are 100% exclusive, never shared or resold to competitors", icon: "badge" },
+  { text: "AI validated prospects delivered in real time, often within minutes", icon: "target" },
+  { text: "Scalable, performance based pricing tied to client revenue", icon: "trending" },
+  { text: "Single focused objective: lead generation and conversion", icon: "funnel" },
+  { text: "25+ years of combined sales, marketing, and direct response experience dating to 1999", icon: "chart" },
+  { text: "Multi-channel reach across Google, LinkedIn, Facebook, Instagram, Bing, and YouTube under one engagement", icon: "megaphone" },
 ];
 
 export const coreServices = [

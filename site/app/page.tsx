@@ -242,9 +242,13 @@ export default function Home() {
           />
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {differentiators.map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange" />
-                <p className="text-sm leading-6 text-zinc-300">{item}</p>
+              <div key={item.text} className="flex items-start gap-4">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-orange/15 text-orange">
+                  <ServiceIcon name={item.icon} className="h-5 w-5" />
+                </div>
+                <p className="pt-2 text-sm leading-6 text-zinc-300">
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
