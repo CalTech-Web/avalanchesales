@@ -31,3 +31,27 @@ Pushed successfully.
 - **Service/Offer JSON-LD on `/services/`** — the page previously had text-only service descriptions with no structured data. Added a `Service` schema with an `OfferCatalog` listing all lead options and core services (drawn from existing `lib/data.ts` content, no invented data) to support rich results.
 - Reviewed metadata, headings, alt text, sitemap, and robots on all pages; everything else was already in good shape from Run #1 (per-page titles/descriptions, canonical URLs, descriptive image alt text).
 - Verified via local production build (`next build`) and server: lint and TypeScript pass clean, `/services/` renders one `<h1>` and the new JSON-LD, other pages unaffected.
+Pushed successfully.
+
+## Summary
+
+Run #2 of the SEO agent found and fixed two real issues on avalanchesales.com (Run #1 already covered sitemap, robots.txt, Organization schema, OG tags, and canonical URLs):
+
+- **Missing `<h1>` on `/services/`** — the site's primary commercial page had no H1 anywhere because its hero used the shared `SectionHeading` component, which only ever rendered an `<h2>`. Added an `as` prop to the component and applied `as="h1"` on the services hero.
+- **Service/Offer structured data on `/services/`** — added JSON-LD listing the site's real lead options and core services (from existing `lib/data.ts` content) to support rich results.
+
+Verified with a local production build, lint, and a running server confirming exactly one `<h1>` per page and correct JSON-LD output. Committed and pushed to `main`, and logged the run in `agent-log.md`.
+[2026-06-30 19:49:15] Run #2 finished
+[2026-06-30 19:49:20] Run #3 starting (model: sonnet)
+[2026-06-30] SEO: Fix Open Graph/Twitter metadata falling back to homepage on every subpage. Every subpage had a correct <title> but its social share tags (og:title, og:description, og:url, Twitter card) silently inherited the homepage's, because Next.js replaces rather than merges the openGraph/twitter metadata object when a route defines its own.
+Pushed successfully.
+
+## Summary
+
+Run #3 audited the site for further technical SEO gaps beyond Runs 1-2 (sitemap/robots/Organization schema/OG defaults, H1 fix, Service schema) and found one real, previously undetected bug:
+
+- **Per-page social/OG metadata was silently discarded.** `about/`, `contact/`, `services/`, `schedule-call-today/`, `privacy-policy/`, and `terms-and-conditions/` each set their own `title`/`description`/`canonical`, so the `<title>` tag was correct, but none of them set `openGraph`/`twitter`, so every subpage rendered the homepage's og:title, og:description, og:url, and Twitter card when shared on social or messaging apps. Confirmed via a clean production build and curl against a running server (og:url for `/about/` was `https://avalanchesales.com/` instead of `/about/`, for example).
+- Added `lib/metadata.ts`, a shared `pageMetadata()` helper that builds the full canonical/openGraph/twitter object (including the site logo image, title, and page-correct URL) from a single title/description/path, and switched all six subpages to use it. Verified via `next build`, `tsc --noEmit`, `eslint`, and a clean isolated build + server confirming correct, distinct `<title>`, canonical, og:title, og:description, og:url, and og:image on every page.
+- Reviewed sitemap/robots coverage (all 7 real routes present), heading hierarchy (h1 -> h2 -> h3 confirmed correct on every page, no skipped levels), image alt text (no empty/missing alts found), and Contact page NAP consistency (phone number renders sitewide via Header/Footer, so no gap there); no further issues found this run.
+
+Committed and pushed to `main`, and logged the run in `agent-log.md`.
