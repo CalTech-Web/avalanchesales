@@ -44,6 +44,25 @@ const paths: Record<string, ReactNode> = {
     </>
   ),
   bolt: <path d="M12.75 3 4.5 13.5h6l-1.5 7.5 8.25-10.5h-6Z" />,
+  dollar: (
+    <>
+      <circle cx={12} cy={12} r={8.25} />
+      <path d="M12 6.75v10.5" />
+      <path d="M14.75 9a2.5 2.5 0 0 0-2.5-1.75h-.5a2.25 2.25 0 0 0 0 4.5h.5a2.25 2.25 0 0 1 0 4.5h-.5A2.5 2.5 0 0 1 9.25 14.5" />
+    </>
+  ),
+  badge: (
+    <>
+      <circle cx={12} cy={9.75} r={5.25} />
+      <path d="M9 14.25 7.5 21l4.5-2.25L16.5 21l-1.5-6.75" />
+    </>
+  ),
+  trending: (
+    <>
+      <path d="m3.75 15.75 5.5-5.5 3.5 3.5 7.5-7.5" />
+      <path d="M15.75 6h4.5v4.5" />
+    </>
+  ),
 };
 
 export default function ServiceIcon({

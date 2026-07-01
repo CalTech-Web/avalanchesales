@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
+import ServiceIcon from "@/components/ServiceIcon";
 import {
   caseStudies,
   company,
@@ -217,7 +218,10 @@ export default function Home() {
           <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {outsourcingValue.map((item) => (
               <div key={item.title} className="rounded-xl bg-zinc-50 p-6">
-                <h3 className="font-bold text-near-black">{item.title}</h3>
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
+                  <ServiceIcon name={item.icon} className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 font-bold text-near-black">{item.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-zinc-600">
                   {item.description}
                 </p>

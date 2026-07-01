@@ -230,9 +230,9 @@ export const caseStudies = [
 ];
 
 export const outsourcingValue = [
-  { title: "Lower Cost", description: "Avoid the overhead of hiring, training, and managing an in-house sales and marketing team." },
-  { title: "Professional Expertise", description: "25+ years of combined sales, marketing, and direct response experience working for you." },
-  { title: "Focused Objectives", description: "One focus, to attract, engage, and convert leads into sales that drive revenue." },
-  { title: "Increased ROI", description: "Pay-per-lead and performance based pricing options keep spend tied to results." },
-  { title: "Increased Leads & Sales", description: "AI validated, exclusive leads delivered in real time to grow your pipeline." },
+  { title: "Lower Cost", description: "Avoid the overhead of hiring, training, and managing an in-house sales and marketing team.", icon: "dollar" },
+  { title: "Professional Expertise", description: "25+ years of combined sales, marketing, and direct response experience working for you.", icon: "badge" },
+  { title: "Focused Objectives", description: "One focus, to attract, engage, and convert leads into sales that drive revenue.", icon: "target" },
+  { title: "Increased ROI", description: "Pay-per-lead and performance based pricing options keep spend tied to results.", icon: "trending" },
+  { title: "Increased Leads & Sales", description: "AI validated, exclusive leads delivered in real time to grow your pipeline.", icon: "funnel" },
 ];
