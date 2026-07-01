@@ -18,12 +18,41 @@ export const metadata: Metadata = {
   },
 };
 
+const servicesJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Lead Generation and Customer Acquisition",
+  provider: {
+    "@type": "ProfessionalService",
+    name: "Avalanche Marketing Agency",
+    url: "https://avalanchesales.com",
+  },
+  areaServed: "US",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Lead Generation Services",
+    itemListElement: [...leadOptions, ...coreServices].map((item) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: item.title,
+        description: item.description,
+      },
+    })),
+  },
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       <section className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
+            as="h1"
             eyebrow="Our Services"
             title="Customer Acquisition Systems Built to Convert"
             description="AI driven lead systems generating pre-qualified leads tailored to your business, deployed across every major channel."
