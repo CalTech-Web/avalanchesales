@@ -63,6 +63,7 @@ const paths: Record<string, ReactNode> = {
       <path d="M15.75 6h4.5v4.5" />
     </>
   ),
+  check: <path d="M4.5 12.75 10 18.25 19.5 6.5" />,
 };
 
 export default function ServiceIcon({

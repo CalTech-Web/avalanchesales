@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import MailIcon from "@/components/MailIcon";
+import ServiceIcon from "@/components/ServiceIcon";
 import { company } from "@/lib/data";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -35,11 +36,13 @@ export default function ScheduleCallPage() {
               map out your exclusive lead generation plan.
             </p>
 
-            <ul className="mt-8 space-y-3">
+            <ul className="mt-8 space-y-4">
               {reasons.map((reason) => (
                 <li key={reason} className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-orange" />
-                  <p className="text-sm leading-6 text-zinc-700">{reason}</p>
+                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
+                    <ServiceIcon name="check" className="h-3.5 w-3.5" />
+                  </div>
+                  <p className="pt-0.5 text-sm leading-6 text-zinc-700">{reason}</p>
                 </li>
               ))}
             </ul>
