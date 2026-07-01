@@ -70,3 +70,26 @@ Run #4 audited crawlability and error handling beyond Runs 1-3 (sitemap/robots/s
 - Reviewed sitemap/robots coverage, per-page canonical/OG/Twitter metadata, heading hierarchy, image alt text, and internal links sitewide for broken hrefs; no further issues found this run.
 
 Committed and pushed to `main`, and logged the run in `agent-log.md`.
+Run #4 is complete. Summary:
+
+**Found and fixed:** The site had no `app/not-found.tsx`, so any broken/mistyped URL fell through to Next.js's bare default 404 page — no branding, no header/footer content, no way back into the site, and it rendered two conflicting `<title>` tags in `<head>`.
+
+**Fix:** Added a branded 404 page with a clear H1, explanation, and CTAs back to Home, Services, and Contact, using the existing `CtaButton` component and page-specific metadata (fixes the duplicate title). Verified via lint, `tsc`, a clean production build, and a live server check confirming correct `404` status, `noindex` behavior, single title/H1, and working links — plus a spot check that `/about/` still renders correctly.
+
+One minor note logged: Next.js 16 itself always emits a second `noindex, follow` robots meta tag alongside the standard one whenever a custom `not-found.tsx` exists, regardless of what metadata you set — both agree on `noindex` so there's no actual indexing risk, it's just an unavoidable framework quirk.
+
+Committed and pushed to `main` (`75bb01f`), and logged in `agent-log.md`.
+[2026-06-30 20:01:48] Run #4 finished
+[2026-06-30 20:01:53] Run #5 starting (model: sonnet)
+[2026-06-30] SEO: Fix the custom 404 page silently inheriting the homepage's canonical URL and Open Graph/Twitter metadata. `app/not-found.tsx` (added in Run #4) only set a `title`, so it fell back to the root layout's `alternates.canonical`, `openGraph`, and `twitter` objects, meaning every broken/mistyped URL rendered `<link rel="canonical" href="https://avalanchesales.com/">` plus social share tags describing the homepage instead of the 404 page.
+
+## Summary
+
+Run #5 audited crawlability/social-sharing correctness beyond Runs 1-4 and found one real, previously undetected bug:
+
+- **404 page had a homepage canonical and homepage OG/Twitter tags.** Confirmed via a clean production build/server that `/does-not-exist/` returned the correct `404` status and `noindex` robots meta, but also rendered `<link rel="canonical" href="https://avalanchesales.com/">` and og:title/og:description/twitter:title/twitter:description all describing the homepage, a misleading signal to crawlers (canonicalizing a dead URL to the homepage) and to anyone sharing a broken link (the social preview would show full homepage branding with no indication the page doesn't exist).
+- Fixed by giving `app/not-found.tsx` its own explicit `description`, an empty `alternates` object (so no canonical renders at all, since a 404 has no canonical target), and page-specific `openGraph`/`twitter` objects describing "Page Not Found" instead of inheriting the homepage's.
+- Verified via `tsc --noEmit`, `eslint`, a clean isolated production build, and a live server check confirming the 404 route now has no canonical tag, correct self-describing OG/Twitter metadata, and unchanged `404` status/`noindex` behavior; spot-checked all 7 real routes to confirm their canonical/og:url/H1 output is unaffected.
+
+Committed and pushed to `main`, and logged the run in `agent-log.md`.
+[2026-06-30] Run #5 complete. Found and fixed a real bug: the branded 404 page added in Run #4 only set a page `title`, so Next.js's metadata inheritance meant it silently fell back to the homepage's canonical URL and Open Graph/Twitter tags, every broken link on the site rendered a canonical pointing at `https://avalanchesales.com/` and social share previews describing the homepage instead of a not-found page. Gave the 404 page its own description, an empty alternates object (no canonical), and self-describing OG/Twitter metadata. Verified with a clean build, lint, typecheck, and a live server check across all 8 routes (7 real pages plus the 404). Committed and pushed to `main`.

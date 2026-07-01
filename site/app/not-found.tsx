@@ -1,8 +1,29 @@
 import type { Metadata } from "next";
 import CtaButton from "@/components/CtaButton";
+import { company } from "@/lib/data";
+
+const title = "Page Not Found";
+const description =
+  "The page you were looking for could not be found. Browse our services or get in touch with Avalanche Sales instead.";
+const ogImage = "/images/logos/avalanche-logo-square-orange.png";
 
 export const metadata: Metadata = {
-  title: "Page Not Found",
+  title,
+  description,
+  alternates: {},
+  openGraph: {
+    type: "website",
+    siteName: company.shortName,
+    title: `${title} | ${company.shortName}`,
+    description,
+    images: [{ url: ogImage, width: 800, height: 800, alt: company.shortName }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${title} | ${company.shortName}`,
+    description,
+    images: [ogImage],
+  },
 };
 
 export default function NotFound() {
