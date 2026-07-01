@@ -55,3 +55,18 @@ Run #3 audited the site for further technical SEO gaps beyond Runs 1-2 (sitemap/
 - Reviewed sitemap/robots coverage (all 7 real routes present), heading hierarchy (h1 -> h2 -> h3 confirmed correct on every page, no skipped levels), image alt text (no empty/missing alts found), and Contact page NAP consistency (phone number renders sitewide via Header/Footer, so no gap there); no further issues found this run.
 
 Committed and pushed to `main`, and logged the run in `agent-log.md`.
+Run #3 complete. Found and fixed a real bug: every subpage's Open Graph/Twitter card metadata (title, description, URL) was silently falling back to the homepage's, because Next.js replaces rather than merges the `openGraph`/`twitter` metadata objects when a route defines its own — so `<title>` was correct but social share previews for About, Contact, Services, Schedule a Call, Privacy Policy, and Terms all showed homepage content instead. Added a shared `lib/metadata.ts` helper and applied it across all six subpages, verified with a clean isolated build, lint, typecheck, and a live server check of all 7 routes. Committed and pushed both the fix and the run log to `main`.
+[2026-06-30 19:55:59] Run #3 finished
+[2026-06-30 19:56:04] Run #4 starting (model: sonnet)
+[2026-06-30] SEO: Add a branded custom 404 page. The site had no `app/not-found.tsx`, so any broken or mistyped URL fell through to Next.js's bare default 404, a plain white page with no site header/footer content, no heading styled for the brand, and no links back into the site, and it emitted two conflicting `<title>` tags in `<head>` ("404: This page could not be found." followed immediately by the homepage's default title).
+
+## Summary
+
+Run #4 audited crawlability and error handling beyond Runs 1-3 (sitemap/robots/schema/OG/H1 fixes) and found one real, previously undetected gap:
+
+- **No custom 404 page.** Confirmed via `curl` against a clean production build/server that hitting a nonexistent URL returned the correct `404` status and a `noindex` robots meta (so no indexing risk), but rendered Next's bare fallback UI with a duplicate, conflicting `<title>` in the document head and zero navigation, branding, or CTAs, a missed opportunity to recover lost visitors and pass link equity back into real pages, and invalid markup that could confuse crawlers about the page's actual title.
+- Added `app/not-found.tsx`: a branded 404 using the site's existing `CtaButton` component, with a single clear H1, a short explanation, and three CTAs back to Home, Services, and Contact. Set page-specific metadata (`title: "Page Not Found"`) so the duplicate-title bug is gone. Verified via `next build`, `tsc --noEmit`, `eslint`, and a clean isolated server, confirming a single correct `<title>`, single H1, working internal links, and the 404 HTTP status/`noindex` behavior all still intact; also spot-checked `/about/` to confirm the change didn't affect existing routes.
+- Note: Next.js 16 always renders a second, framework-level `noindex, follow` robots meta tag alongside the standard one whenever a custom `not-found.tsx` exists, even with no explicit `robots` field set in that page's metadata. Both tags agree (`noindex`), so there is no indexing conflict, this is an unavoidable framework quirk rather than a fixable bug.
+- Reviewed sitemap/robots coverage, per-page canonical/OG/Twitter metadata, heading hierarchy, image alt text, and internal links sitewide for broken hrefs; no further issues found this run.
+
+Committed and pushed to `main`, and logged the run in `agent-log.md`.
