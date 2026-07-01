@@ -48,7 +48,10 @@ export default function Footer() {
             <a href={company.phoneHref} className="block hover:text-orange">
               {company.phone}
             </a>
-            <a href={`mailto:${company.email}`} className="block hover:text-orange">
+            <a
+              href={`mailto:${company.email}`}
+              className="block break-words hover:text-orange"
+            >
               {company.email}
             </a>
           </div>

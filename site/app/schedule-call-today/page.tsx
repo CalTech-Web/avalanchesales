@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import MailIcon from "@/components/MailIcon";
 import { company } from "@/lib/data";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -44,8 +45,8 @@ export default function ScheduleCallPage() {
             </ul>
 
             <div className="mt-10 flex items-center gap-4">
-              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange text-lg font-extrabold text-white">
-                A
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange text-white">
+                <MailIcon className="h-6 w-6" />
               </div>
               <div>
                 <p className="text-sm font-semibold text-near-black">

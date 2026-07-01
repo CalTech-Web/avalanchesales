@@ -11,6 +11,21 @@ export const metadata = pageMetadata({
   path: "/about/",
 });
 
+const technologies = [
+  "Google Ads",
+  "LinkedIn Ads",
+  "Facebook Ads",
+  "Instagram Ads",
+  "Bing Ads",
+  "YouTube",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "ClickFunnels",
+  "CRM Automation",
+  "AI Analytics",
+];
+
 const timeline = [
   {
     year: "1999",
@@ -125,13 +140,15 @@ export default function AboutPage() {
             title="Technology Backed by Two Decades of Sales Experience"
             description="Our team pairs AI driven targeting and qualification with proven, human led sales process, so every lead we deliver is both validated and ready to talk."
           />
-          <div className="mt-14 relative mx-auto h-64 w-full max-w-3xl sm:h-80">
-            <Image
-              src="/images/gallery/software-tools-collage.png"
-              alt="Software and tools used by Avalanche Sales"
-              fill
-              className="rounded-xl object-contain"
-            />
+          <div className="mt-14 mx-auto flex max-w-3xl flex-wrap justify-center gap-3 rounded-xl border border-zinc-200 bg-zinc-50 p-8 sm:p-10">
+            {technologies.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-orange/20 bg-white px-5 py-2.5 text-sm font-semibold text-near-black shadow-sm transition-colors hover:border-orange/40 hover:text-orange"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
       </section>

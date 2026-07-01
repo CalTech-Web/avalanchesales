@@ -115,11 +115,6 @@ export default function TermsPage() {
               .
             </p>
           </div>
-
-          <p className="text-xs text-zinc-500">
-            &copy; 2019 to 2026 Avalanche Marketing Agency, LLC All Rights
-            Reserved
-          </p>
         </div>
       </div>
     </section>

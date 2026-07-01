@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden overflow-x-hidden bg-white">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-orange/15 blur-3xl"
@@ -96,6 +96,7 @@ export default function Home() {
                     src={option.image}
                     alt={option.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>
@@ -186,6 +187,7 @@ export default function Home() {
                     src={platform.icon}
                     alt={platform.name}
                     fill
+                    sizes="48px"
                     className="object-contain"
                   />
                 </div>
@@ -264,6 +266,7 @@ export default function Home() {
                     src={study.image}
                     alt={study.industry}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>

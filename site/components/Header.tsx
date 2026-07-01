@@ -46,12 +46,25 @@ export default function Header() {
         <button
           type="button"
           aria-label="Toggle menu"
-          className="flex flex-col gap-1.5 lg:hidden"
+          aria-expanded={open}
+          className="relative flex h-7 w-7 flex-col items-center justify-center gap-1.5 lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="h-0.5 w-7 bg-near-black" />
-          <span className="h-0.5 w-7 bg-near-black" />
-          <span className="h-0.5 w-7 bg-near-black" />
+          <span
+            className={`h-0.5 w-7 bg-near-black transition-transform duration-200 ${
+              open ? "translate-y-2 rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`h-0.5 w-7 bg-near-black transition-opacity duration-200 ${
+              open ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <span
+            className={`h-0.5 w-7 bg-near-black transition-transform duration-200 ${
+              open ? "-translate-y-2 -rotate-45" : ""
+            }`}
+          />
         </button>
       </div>
 

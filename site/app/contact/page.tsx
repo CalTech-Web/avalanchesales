@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import CtaButton from "@/components/CtaButton";
+import MailIcon from "@/components/MailIcon";
 import { company } from "@/lib/data";
 import { pageMetadata } from "@/lib/metadata";
 
@@ -27,13 +28,21 @@ export default function ContactPage() {
               up to discuss the right lead generation option for you.
             </p>
 
-            <div className="mt-10 space-y-4">
-              <a
-                href={`mailto:${company.email}`}
-                className="block text-sm font-semibold text-near-black hover:text-orange"
-              >
-                {company.email}
-              </a>
+            <div className="mt-10 flex items-center gap-4">
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-orange text-white">
+                <MailIcon className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-near-black">
+                  Prefer email?
+                </p>
+                <a
+                  href={`mailto:${company.email}`}
+                  className="text-sm text-orange hover:text-orange-dark"
+                >
+                  {company.email}
+                </a>
+              </div>
             </div>
 
             <div className="mt-10 rounded-xl bg-zinc-50 p-6">

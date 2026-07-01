@@ -71,6 +71,7 @@ export default function ServicesPage() {
                     src={option.image}
                     alt={option.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>
@@ -168,6 +169,7 @@ export default function ServicesPage() {
                     src={platform.icon}
                     alt={platform.name}
                     fill
+                    sizes="48px"
                     className="object-contain"
                   />
                 </div>
