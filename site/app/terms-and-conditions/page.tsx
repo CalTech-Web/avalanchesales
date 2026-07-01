@@ -4,6 +4,9 @@ import { company } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Terms and Conditions",
   description: "Terms and Conditions for Avalanche Marketing Agency.",
+  alternates: {
+    canonical: "/terms-and-conditions/",
+  },
 };
 
 export default function TermsPage() {

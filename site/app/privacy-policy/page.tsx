@@ -4,6 +4,9 @@ import { company } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Avalanche Marketing Agency.",
+  alternates: {
+    canonical: "/privacy-policy/",
+  },
 };
 
 export default function PrivacyPolicyPage() {

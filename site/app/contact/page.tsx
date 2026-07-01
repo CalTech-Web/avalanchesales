@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Avalanche Sales to start exclusive, AI validated lead generation for your business.",
+  alternates: {
+    canonical: "/contact/",
+  },
 };
 
 export default function ContactPage() {

@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Exclusive lead generation, ready to buy leads, private lead generation systems, and full customer acquisition systems across Google, LinkedIn, Facebook, Instagram, Bing, and YouTube.",
+  alternates: {
+    canonical: "/services/",
+  },
 };
 
 export default function ServicesPage() {

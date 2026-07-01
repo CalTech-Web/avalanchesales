@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Schedule A Call Today",
   description:
     "Book a free, no obligation 30 minute discovery call with Avalanche Sales and see how fast we can launch your exclusive lead campaign.",
+  alternates: {
+    canonical: "/schedule-call-today/",
+  },
 };
 
 const reasons = [

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "25+ years of combined sales, marketing, and direct response experience. Learn how Avalanche Sales became a multi-channel customer acquisition agency.",
+  alternates: {
+    canonical: "/about/",
+  },
 };
 
 const timeline = [
