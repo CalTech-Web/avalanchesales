@@ -72,7 +72,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-orange"
             >
-              Caltechweb
+              CalTech Web
             </a>
           </p>
         </div>
