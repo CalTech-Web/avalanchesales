@@ -4,6 +4,8 @@ import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
 import HeroDashboard from "@/components/HeroDashboard";
+import SectionDecor from "@/components/SectionDecor";
+import DashStat from "@/components/DashStat";
 import AcquisitionHub from "@/components/AcquisitionHub";
 import VerificationFunnel from "@/components/VerificationFunnel";
 import PortalsShowcase from "@/components/PortalsShowcase";
@@ -60,8 +62,9 @@ export default function Home() {
       </section>
 
       {/* 2. Hero call-out banner */}
-      <section className="bg-orange-text py-16 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-orange-text py-16 text-white">
+        <SectionDecor variant="dark" />
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">
               Why Businesses Choose Avalanche Sales
@@ -83,7 +86,23 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl text-center">
+          <div className="relative mx-auto mt-12 max-w-3xl text-center">
+            <DashStat
+              className="absolute right-full top-4 mr-8 hidden xl:block"
+              label="Leads Generated"
+              value="5,000+"
+              unit="/ mo"
+              data={[3, 4, 3, 5, 6, 7, 9]}
+              type="bars"
+            />
+            <DashStat
+              className="absolute left-full top-24 ml-8 hidden xl:block"
+              label="Client Sales, Proj."
+              value="$1M+"
+              unit="/ mo"
+              data={[2, 3, 4, 4, 6, 8, 11]}
+              type="line"
+            />
             <p className="text-2xl font-bold">
               Simply Pay for Qualified Sales Opportunities
             </p>
@@ -462,8 +481,9 @@ export default function Home() {
       </section>
 
       {/* 10. Final CTA */}
-      <section className="bg-orange-text py-20 text-white">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-orange-text py-20 text-white">
+        <SectionDecor variant="dark" />
+        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold sm:text-4xl">
             Stop Chasing Prospects. Start Talking to Buyers.
           </h2>
