@@ -368,6 +368,130 @@ export const dataAdvantages = [
   "Real-Time Distribution",
 ];
 
+// Homepage: Acquisition Channels hub (interactive spoke diagram)
+export const acquisitionChannels: {
+  label: string;
+  icon: string;
+  detail: string;
+}[] = [
+  {
+    label: "Search Advertising",
+    icon: "search",
+    detail:
+      "We capture buyers on Google and Bing the moment they search for what you sell.",
+  },
+  {
+    label: "Social Advertising",
+    icon: "megaphone",
+    detail:
+      "Facebook, Instagram, and YouTube campaigns engineered to turn scrolling into conversations.",
+  },
+  {
+    label: "LinkedIn B2B Targeting",
+    icon: "briefcase",
+    detail:
+      "We reach decision makers and executives directly inside their professional feed.",
+  },
+  {
+    label: "Live Call Transfers",
+    icon: "chat",
+    detail:
+      "High intent callers connected to your team in real time, ready to buy.",
+  },
+  {
+    label: "Purchase Intent Signals",
+    icon: "target",
+    detail:
+      "Billions of behavioral data points reveal buyers entering the market first.",
+  },
+  {
+    label: "Landing Page Funnels",
+    icon: "funnel",
+    detail:
+      "Industry specific pages with built in qualification that route leads instantly.",
+  },
+  {
+    label: "CRM & Zapier Delivery",
+    icon: "bolt",
+    detail:
+      "Every opportunity flows straight into your CRM and tools the second it is verified.",
+  },
+  {
+    label: "Real-Time Distribution",
+    icon: "trending",
+    detail:
+      "Exclusive leads delivered within minutes, never shared and never resold.",
+  },
+];
+
+// Homepage: Lead Verification funnel (interactive stages)
+export const verificationStages: {
+  title: string;
+  tag: string;
+  detail: string;
+}[] = [
+  {
+    title: "Consent & Compliance",
+    tag: "Documented Consent",
+    detail:
+      "We confirm opt-in and full TCPA consent on every record before it moves forward.",
+  },
+  {
+    title: "Data Standardization",
+    tag: "Accurate Records",
+    detail:
+      "Every address and field is cleaned, corrected, and standardized for accuracy.",
+  },
+  {
+    title: "Phone & Email Verification",
+    tag: "Reachable Contacts",
+    detail:
+      "We validate that every phone number and email is live and reachable.",
+  },
+  {
+    title: "Duplicate & Fraud Screening",
+    tag: "No Duplicates",
+    detail:
+      "Repeats, bots, and bad actors are removed before anything reaches your pipeline.",
+  },
+  {
+    title: "Human Quality Review",
+    tag: "Human Verified",
+    detail:
+      "A real person signs off on the record before it is delivered to your business.",
+  },
+];
+
+export const verificationOutcome = "Exclusive Verified Opportunity";
+
+// Homepage: dual platform portals (interactive)
+export const portalGroups: {
+  title: string;
+  subtitle: string;
+  items: string[];
+}[] = [
+  {
+    title: "Partner & Affiliate Portal",
+    subtitle: "For the vendors and affiliates who send us traffic",
+    items: [
+      "Submit approved traffic",
+      "Track real-time payouts",
+      "Access campaign specs",
+      "Check lead approval status",
+    ],
+  },
+  {
+    title: "Client & Buyer Dashboard",
+    subtitle: "For the businesses receiving our exclusive leads",
+    items: [
+      "Receive live verified leads",
+      "Scale your lead volume",
+      "Review and return records",
+      "Manage billing and account",
+    ],
+  },
+];
+
 // Homepage + shared: Industries We Serve icon grid
 export const industriesGrid: { label: string; href: string; icon: string }[] = [
   { label: "Roofing", href: "/industries/#home-improvement-contractors", icon: "home" },

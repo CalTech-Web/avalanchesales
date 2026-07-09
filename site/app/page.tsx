@@ -3,6 +3,9 @@ import Link from "next/link";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
+import AcquisitionHub from "@/components/AcquisitionHub";
+import VerificationFunnel from "@/components/VerificationFunnel";
+import PortalsShowcase from "@/components/PortalsShowcase";
 import {
   caseStudies,
   caseStudyDisclosure,
@@ -242,6 +245,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 5b. Acquisition Channels hub */}
+      <section className="bg-zinc-50 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Acquisition Channels"
+            title="Every Channel. One Acquisition Engine."
+            description="We pull high-intent buyers from every corner of the market and route them through a single, exclusive pipeline built for your business."
+          />
+          <div className="mt-14">
+            <AcquisitionHub />
+          </div>
+        </div>
+      </section>
+
+      {/* 5c. Lead Verification funnel */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="How We Verify"
+            title="Every Lead Runs the Verification Gauntlet"
+            description="Before an opportunity ever reaches you, it passes through five layers of automated and human verification. Hover each stage to see what we check."
+          />
+          <div className="mt-14">
+            <VerificationFunnel />
+          </div>
+        </div>
+      </section>
+
       {/* 6. Industries We Serve */}
       <section className="bg-zinc-50 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -317,6 +348,20 @@ export default function Home() {
               achieve predictable, long-term growth through the power of AI,
               data intelligence, and proven customer acquisition strategies.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 7b. Vendor & Client portals */}
+      <section className="bg-zinc-50 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Platform Access"
+            title="Two Portals. One Connected Platform."
+            description="Whether you send us traffic or receive our exclusive leads, everything you need lives in one place."
+          />
+          <div className="mt-14">
+            <PortalsShowcase />
           </div>
         </div>
       </section>
