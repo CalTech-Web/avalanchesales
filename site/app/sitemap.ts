@@ -4,7 +4,15 @@ const baseUrl = "https://avalanchesales.com";
 
 const routes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
-  { path: "/services/", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/solutions/", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/industries/", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/how-it-works/", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/resources/", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/resources/faq/", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/resources/customer-acquisition-guide/", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/resources/industry-insights/", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/resources/case-studies/", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/resources/sales-marketing-tips/", priority: 0.6, changeFrequency: "monthly" },
   { path: "/about/", priority: 0.7, changeFrequency: "monthly" },
   { path: "/schedule-call-today/", priority: 0.8, changeFrequency: "monthly" },
   { path: "/contact/", priority: 0.6, changeFrequency: "monthly" },

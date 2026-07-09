@@ -17,9 +17,9 @@ const roboto = Roboto({
 });
 
 const defaultTitle =
-  "Avalanche Sales | Exclusive Leads. Real Customers. Predictable Growth.";
+  "Avalanche Sales | Exclusive Sales Opportunities. Real Buyers. Predictable Growth.";
 const defaultDescription =
-  "Avalanche Marketing Agency delivers exclusive, AI validated, pay-per-lead customer acquisition across Google, LinkedIn, Facebook, Instagram, Bing, and YouTube, with no long-term contracts.";
+  "Avalanche Sales is your AI-powered customer acquisition partner, delivering exclusive, human-verified buying opportunities directly to your business. No shared data, no recycled prospects, no long-term contracts.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://avalanchesales.com"),
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/logos/avalanche-logo-square-orange.png",
-        width: 800,
-        height: 800,
+        width: 750,
+        height: 750,
         alt: "Avalanche Sales",
       },
     ],

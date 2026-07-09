@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --color-orange: #ED751C;
   --color-orange-dark: #c95e10;
+  --color-orange-text: #b45309;
   --color-near-black: #202020;
   --color-blue-accent: #1279E0;
   --font-sans: var(--font-poppins);

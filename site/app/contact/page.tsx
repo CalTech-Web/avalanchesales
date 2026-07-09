@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with Avalanche Sales to start exclusive, AI validated lead generation for your business.",
+    "Get in touch with Avalanche Sales to schedule your free customer acquisition strategy session and start connecting with real buyers.",
   path: "/contact/",
 });
 
@@ -17,15 +17,16 @@ export default function ContactPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-orange">
+            <p className="text-sm font-semibold uppercase tracking-wider text-orange-text">
               Contact Us
             </p>
             <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-near-black sm:text-5xl">
-              Let&apos;s Talk About Your Pipeline
+              Schedule Your FREE Customer Acquisition Strategy Session
             </h1>
             <p className="mt-6 text-lg leading-7 text-zinc-600">
               Tell us about your business and goals, and our team will follow
-              up to discuss the right lead generation option for you.
+              up to discuss how we can help you connect with more qualified
+              buyers and build predictable revenue.
             </p>
 
             <div className="mt-10 flex items-center gap-4">
@@ -38,7 +39,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={`mailto:${company.email}`}
-                  className="text-sm text-orange hover:text-orange-dark"
+                  className="text-sm text-orange-text hover:text-orange-dark"
                 >
                   {company.email}
                 </a>
@@ -54,7 +55,7 @@ export default function ContactPage() {
                 team.
               </p>
               <CtaButton href="/schedule-call-today/" className="mt-5">
-                Schedule A Call Today!
+                Get Started
               </CtaButton>
             </div>
           </div>

@@ -30,8 +30,8 @@ export function pageMetadata({
       images: [
         {
           url: ogImage,
-          width: 800,
-          height: 800,
+          width: 750,
+          height: 750,
           alt: company.shortName,
         },
       ],

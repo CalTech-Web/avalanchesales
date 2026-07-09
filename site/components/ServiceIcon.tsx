@@ -64,6 +64,60 @@ const paths: Record<string, ReactNode> = {
     </>
   ),
   check: <path d="M4.5 12.75 10 18.25 19.5 6.5" />,
+  home: (
+    <>
+      <path d="M3.5 11.5 12 4.5l8.5 7" />
+      <path d="M5.5 10v9.5h13V10" />
+      <path d="M10 19.5v-5h4v5" />
+    </>
+  ),
+  sun: (
+    <>
+      <circle cx={12} cy={12} r={4} />
+      <path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" />
+    </>
+  ),
+  shield: (
+    <>
+      <path d="M12 3.5 5.5 6v5c0 4 2.75 7 6.5 8.5C15.75 18 18.5 15 18.5 11V6Z" />
+      <path d="M9.25 12 11 13.75 15 9.5" />
+    </>
+  ),
+  scale: (
+    <>
+      <path d="M12 4v16M6 20h12" />
+      <path d="M6 6.5h12" />
+      <path d="M6 6.5 3.5 12h5ZM18 6.5 15.5 12h5Z" />
+    </>
+  ),
+  heart: (
+    <path d="M12 20s-7-4.35-7-9.5A3.5 3.5 0 0 1 12 7.5 3.5 3.5 0 0 1 19 10.5C19 15.65 12 20 12 20Z" />
+  ),
+  wrench: (
+    <path d="M15.5 4.5a4 4 0 0 0-4.7 5.3L4.5 16.4a1.8 1.8 0 0 0 2.5 2.5l6.6-6.3a4 4 0 0 0 5.3-4.7l-2.4 2.4-2.3-.6-.6-2.3Z" />
+  ),
+  car: (
+    <>
+      <path d="M4 15v-2.5l1.6-4A2 2 0 0 1 7.5 7h9a2 2 0 0 1 1.9 1.5l1.6 4V15" />
+      <path d="M3.5 15h17v2.5h-2V15M6 17.5V15" />
+      <circle cx={7.5} cy={15} r={1.25} fill="currentColor" />
+      <circle cx={16.5} cy={15} r={1.25} fill="currentColor" />
+    </>
+  ),
+  hardhat: (
+    <>
+      <path d="M4 16a8 8 0 0 1 16 0" />
+      <path d="M9.5 8.5V6a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2.5" />
+      <path d="M3 16h18v1.5H3Z" />
+    </>
+  ),
+  briefcase: (
+    <>
+      <rect x={3.5} y={7.5} width={17} height={11} rx={1.5} />
+      <path d="M9 7.5V6a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 6v1.5" />
+      <path d="M3.5 12h17" />
+    </>
+  ),
 };
 
 export default function ServiceIcon({
