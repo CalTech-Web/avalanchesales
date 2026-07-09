@@ -14,7 +14,6 @@
   --color-near-black: #202020;
   --color-blue-accent: #1279E0;
   --font-sans: var(--font-poppins);
-  --font-secondary: var(--font-roboto);
 }
 
 body {
