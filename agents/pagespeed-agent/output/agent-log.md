@@ -68,3 +68,17 @@ No code changes were made, and nothing was logged to `output/agent-log.md` since
 - **After:** Performance 100. FCP 0.9s, LCP 1.4s (score 1), TBT 10ms, CLS 0, SI 1.5s.
 - **Result:** 99 -> 100, LCP 2.0s -> 1.4s. All metrics now score 1.
 - **Remaining candidates for run 3:** unused-javascript (~29 KiB, Next framework chunk), legacy-javascript polyfills (~14 KiB, same chunk) — both low-leverage since TBT is already 10ms; little headroom left at 100.
+
+## Run 3, 2026-07-08 (post-redesign)
+
+Verification pass across key pages (PSI REST API). No code changes made.
+
+| Page | Strategy | Score | FCP | LCP | TBT | CLS | SI |
+|---|---|---|---|---|---|---|---|
+| / | mobile | 100 | 0.9s | 1.6s | 0ms | 0 | 1.5s |
+| / | desktop | 100 | 0.3s | 0.5s | 0ms | 0 | 0.7s |
+| /solutions/ | mobile | 100 | 0.9s | 1.5s | 50ms | 0 | 1.7s |
+| /how-it-works/ | mobile | 99 | 0.9s | 2.0s | 50ms | 0 | 2.4s |
+
+- **Result:** Score holds at 99-100 across all tested pages and strategies after the run 1 and run 2 fixes.
+- **Why no change:** The only sub-100 page (/how-it-works, 99) has a text-paragraph LCP whose render delay traces to items already evaluated: render-blocking CSS (the experimental.inlineCss attempt in run 2 regressed the homepage to 94-95 and was reverted, so it is not a safe fix) and unused/legacy JavaScript (~29 KiB + ~14 KiB) inside Next's own framework chunk, which is not fixable from application code. No clearly safe, high-confidence improvement remained, so this run concluded as a verification pass per its instructions.
