@@ -48,3 +48,13 @@ The PageSpeed Insights API returned a quota error (429, "Quota exceeded for quot
 No code changes were made, and nothing was logged to `output/agent-log.md` since no valid before/after scores were obtained.
 [2026-07-01 14:01:14] Run #2 finished
 [2026-07-01 14:01:14] Reached max loops (2). Stopping.
+
+## Run 1, 2026-07-08 (post-redesign)
+
+- **URL tested:** https://avalanchesales.vercel.app (mobile strategy, PSI REST API)
+- **Before:** Performance 99. FCP 1.0s, LCP 2.3s (score 0.94), TBT 30ms, CLS 0.003, SI 1.9s
+- **Top issue:** image-delivery-insight (score 0.5, est 66 KiB savings). The priority hero image (/images/products/sales-graph.png) had no `sizes` prop, so Next.js defaulted to 100vw and served the 1920w variant (1536x1024) into a 448px max-width container — 68 KB wasted on mobile.
+- **Fix:** Added `sizes="(min-width: 1024px) 50vw, min(100vw, 28rem)"` to the hero Image in site/app/page.tsx (commit 7232638). Performance-only, no visual change.
+- **After:** Performance 99. FCP 1.0s, LCP 2.0s (score 0.97), TBT 40ms, CLS 0.003, SI 2.0s. image-delivery-insight now passes (score 1).
+- **Result:** Score unchanged at 99 (near ceiling), but LCP improved 2.3s -> 2.0s and the wasted image bytes are eliminated. Change kept.
+- **Remaining candidates for next runs:** unused-javascript (~29 KiB in one Next chunk), legacy-javascript polyfills (~14 KiB), render-blocking CSS (~100ms, 9 KB stylesheet).
