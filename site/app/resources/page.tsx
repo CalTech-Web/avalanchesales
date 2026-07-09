@@ -48,11 +48,11 @@ export default function ResourcesPage() {
       {/* Resource cards */}
       <section className="bg-zinc-50 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-8">
             {resourceCards.map((card) => (
               <div
                 key={card.title}
-                className="flex flex-col rounded-2xl border border-zinc-200 bg-white p-8"
+                className="flex w-full flex-col rounded-2xl border border-zinc-200 bg-white p-8 md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
                   <ServiceIcon name={card.icon} className="h-6 w-6" />

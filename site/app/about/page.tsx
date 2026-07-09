@@ -294,11 +294,11 @@ export default function AboutPage() {
             eyebrow="Why Businesses Choose Avalanche Sales"
             title="Businesses Partner With Us Because They Want"
           />
-          <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 flex flex-wrap justify-center gap-8">
             {whyChoose.map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl border border-zinc-200 bg-white p-6"
+                className="w-full rounded-xl border border-zinc-200 bg-white p-6 sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
                   <ServiceIcon name={item.icon} className="h-6 w-6" />

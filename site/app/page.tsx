@@ -70,11 +70,11 @@ export default function Home() {
               Why Businesses Choose Avalanche Sales
             </h2>
           </div>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             {noFeeBenefits.map((benefit) => (
               <div
                 key={benefit}
-                className="flex flex-col items-center gap-3 rounded-xl bg-white/10 p-6 text-center"
+                className="flex w-full flex-col items-center gap-3 rounded-xl bg-white/10 p-6 text-center sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(20%-0.8rem)]"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-xl font-extrabold">
                   NO
@@ -165,11 +165,11 @@ export default function Home() {
             title="The Avalanche Growth Method"
             description="Five steps that turn high-intent buyers into predictable, sustainable revenue growth."
           />
-          <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-14 flex flex-wrap justify-center gap-8">
             {growthMethod.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col rounded-xl border border-zinc-200 bg-white p-6"
+                className="flex w-full flex-col rounded-xl border border-zinc-200 bg-white p-6 sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.334rem)] lg:w-[calc(20%-1.6rem)]"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
@@ -324,11 +324,11 @@ export default function Home() {
       <section className="bg-white pb-4">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Why Avalanche Sales" title="Built to Deliver Real Buyers" />
-          <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-14 flex flex-wrap justify-center gap-8">
             {whyAvalanche.map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl border border-zinc-200 bg-zinc-50 p-6"
+                className="w-full rounded-xl border border-zinc-200 bg-zinc-50 p-6 sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.334rem)] lg:w-[calc(20%-1.6rem)]"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
                   <ServiceIcon name={item.icon} className="h-6 w-6" />
@@ -354,9 +354,12 @@ export default function Home() {
       </section>
 
       <section className="bg-near-black py-14">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 sm:px-6 md:grid-cols-3 lg:grid-cols-5 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-8 px-4 sm:px-6 lg:px-8">
           {homeStats.map((stat) => (
-            <div key={stat.label} className="text-center">
+            <div
+              key={stat.label}
+              className="w-[calc(50%-1rem)] text-center md:w-[calc(33.333%-1.334rem)] lg:w-[calc(20%-1.6rem)]"
+            >
               <p className="text-2xl font-extrabold text-orange sm:text-3xl">
                 {stat.value}
               </p>

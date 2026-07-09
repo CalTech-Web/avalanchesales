@@ -143,14 +143,14 @@ export default function Header() {
 
       {/* Mobile full-screen overlay */}
       {open && (
-        <div className="fixed inset-0 z-40 lg:hidden">
+        <div className="fixed inset-x-0 top-[57px] bottom-0 z-40 lg:hidden">
           <button
             type="button"
             aria-label="Close menu"
             className="absolute inset-0 bg-near-black/40"
             onClick={closeMenu}
           />
-          <div className="absolute inset-x-0 top-[57px] bottom-0 overflow-y-auto bg-white px-4 pb-10 pt-4 sm:px-6">
+          <div className="absolute inset-x-0 top-0 bottom-0 overflow-y-auto bg-white px-4 pb-10 pt-4 sm:px-6">
             <nav className="flex flex-col">
               {navLinks.map((item) => {
                 const active = isActive(pathname, item);
