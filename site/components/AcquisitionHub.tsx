@@ -69,38 +69,31 @@ export default function AcquisitionHub() {
               onFocus={() => setActive(i)}
               onClick={() => setActive(i)}
               aria-pressed={on}
-              className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+              // The button is sized to the icon dot and centred on the ring
+              // point, so the icon always sits exactly on the ring. The label
+              // is positioned absolutely so it never shifts the icon.
+              className="absolute z-10 block h-11 w-11 -translate-x-1/2 -translate-y-1/2"
               style={{ left: `${left}%`, top: `${top}%` }}
             >
               <span
-                className={`flex items-center gap-2.5 ${
-                  side === "left"
-                    ? "flex-row-reverse"
-                    : side === "center"
-                      ? "flex-col"
-                      : "flex-row"
+                className={`flex h-11 w-11 items-center justify-center rounded-full ring-4 transition-all ${
+                  on
+                    ? "bg-orange text-white ring-orange/20 shadow-md"
+                    : "bg-white text-orange ring-orange/15 shadow-sm"
                 }`}
               >
-                <span
-                  className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full ring-4 transition-all ${
-                    on
-                      ? "bg-orange text-white ring-orange/20 shadow-md"
-                      : "bg-white text-orange ring-orange/15 shadow-sm"
-                  }`}
-                >
-                  <ServiceIcon name={channel.icon} className="h-5 w-5" />
-                </span>
-                <span
-                  className={`w-24 text-xs font-semibold leading-tight ${
-                    side === "left"
-                      ? "text-right"
-                      : side === "center"
-                        ? "text-center"
-                        : "text-left"
-                  } ${on ? "text-orange-text" : "text-near-black"}`}
-                >
-                  {channel.label}
-                </span>
+                <ServiceIcon name={channel.icon} className="h-5 w-5" />
+              </span>
+              <span
+                className={`absolute text-xs font-semibold leading-tight ${
+                  side === "left"
+                    ? "right-full top-1/2 mr-3 w-24 -translate-y-1/2 text-right"
+                    : side === "center"
+                      ? "left-1/2 top-full mt-2 w-28 -translate-x-1/2 text-center"
+                      : "left-full top-1/2 ml-3 w-24 -translate-y-1/2 text-left"
+                } ${on ? "text-orange-text" : "text-near-black"}`}
+              >
+                {channel.label}
               </span>
             </button>
           );
