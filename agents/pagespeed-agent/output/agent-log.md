@@ -58,3 +58,13 @@ No code changes were made, and nothing was logged to `output/agent-log.md` since
 - **After:** Performance 99. FCP 1.0s, LCP 2.0s (score 0.97), TBT 40ms, CLS 0.003, SI 2.0s. image-delivery-insight now passes (score 1).
 - **Result:** Score unchanged at 99 (near ceiling), but LCP improved 2.3s -> 2.0s and the wasted image bytes are eliminated. Change kept.
 - **Remaining candidates for next runs:** unused-javascript (~29 KiB in one Next chunk), legacy-javascript polyfills (~14 KiB), render-blocking CSS (~100ms, 9 KB stylesheet).
+
+## Run 2, 2026-07-08 (post-redesign)
+
+- **URL tested:** https://avalanchesales.vercel.app (mobile strategy, PSI REST API)
+- **Before:** Performance 99. FCP 1.0s, LCP 2.0s (score 0.97), TBT 40ms, CLS 0.003, SI 2.0s
+- **Attempt 1 (reverted):** Enabled `experimental.inlineCss` in site/next.config.ts to remove the 9 KB render-blocking stylesheet (commit a444cd4). Render-blocking audit passed and FCP improved, but the score dropped to 95 and a confirmation run showed 94 (LCP 2.6-2.8s, SI 3.8-3.9s). Reverted per the rules (commit 800d240) and verified the revert deployed.
+- **Fix (kept):** Removed the Roboto font (400/500/700) and the Poppins 300 weight from site/app/layout.tsx and site/app/globals.css (commit 5acd029). Roboto was registered and mapped to --font-secondary but no component ever renders it, and nothing uses font-light. This cut preloaded font files from 9 to 5, freeing bandwidth on the critical path to the LCP H1 (Poppins 800). Zero visual change.
+- **After:** Performance 100. FCP 0.9s, LCP 1.4s (score 1), TBT 10ms, CLS 0, SI 1.5s.
+- **Result:** 99 -> 100, LCP 2.0s -> 1.4s. All metrics now score 1.
+- **Remaining candidates for run 3:** unused-javascript (~29 KiB, Next framework chunk), legacy-javascript polyfills (~14 KiB, same chunk) — both low-leverage since TBT is already 10ms; little headroom left at 100.
