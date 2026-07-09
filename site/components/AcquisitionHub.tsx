@@ -89,7 +89,9 @@ export default function AcquisitionHub() {
                   side === "left"
                     ? "right-full top-1/2 mr-3 w-24 -translate-y-1/2 text-right"
                     : side === "center"
-                      ? "left-1/2 top-full mt-2 w-28 -translate-x-1/2 text-center"
+                      ? `left-1/2 w-28 -translate-x-1/2 text-center ${
+                          top < 50 ? "bottom-full mb-2" : "top-full mt-2"
+                        }`
                       : "left-full top-1/2 ml-3 w-24 -translate-y-1/2 text-left"
                 } ${on ? "text-orange-text" : "text-near-black"}`}
               >
