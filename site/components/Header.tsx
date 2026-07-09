@@ -105,6 +105,10 @@ export default function Header() {
           >
             {company.phone}
           </a>
+          {/* Login: destination not wired up yet */}
+          <span className="hidden cursor-pointer text-sm font-semibold text-near-black transition-colors hover:text-orange-text lg:inline">
+            Login
+          </span>
           <Link
             href="/schedule-call-today/"
             className="rounded-md bg-orange-text px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#933f07]"
