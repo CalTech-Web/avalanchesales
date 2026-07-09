@@ -56,6 +56,7 @@ export default function Home() {
               width={640}
               height={480}
               priority
+              sizes="(min-width: 1024px) 50vw, min(100vw, 28rem)"
               className="mx-auto h-auto w-full rounded-xl shadow-md ring-1 ring-zinc-100"
             />
           </div>
