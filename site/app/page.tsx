@@ -3,6 +3,7 @@ import Link from "next/link";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
+import HeroDashboard from "@/components/HeroDashboard";
 import AcquisitionHub from "@/components/AcquisitionHub";
 import VerificationFunnel from "@/components/VerificationFunnel";
 import PortalsShowcase from "@/components/PortalsShowcase";
@@ -53,15 +54,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-md lg:max-w-full">
-            <Image
-              src="/images/products/sales-graph.png"
-              alt="AI-powered sales analytics dashboard"
-              width={640}
-              height={480}
-              priority
-              sizes="(min-width: 1024px) 50vw, min(100vw, 28rem)"
-              className="mx-auto h-auto w-full rounded-xl shadow-md ring-1 ring-zinc-100"
-            />
+            <HeroDashboard />
           </div>
         </div>
       </section>
@@ -175,13 +168,8 @@ export default function Home() {
                 key={item.title}
                 className="flex w-full flex-col rounded-xl border border-zinc-200 bg-white p-6 sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.334rem)] lg:w-[calc(20%-1.6rem)]"
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
-                    <ServiceIcon name={item.icon} className="h-6 w-6" />
-                  </div>
-                  <span className="text-3xl font-extrabold text-orange/25">
-                    {item.step}
-                  </span>
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange/10 text-orange">
+                  <ServiceIcon name={item.icon} className="h-6 w-6" />
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-near-black">
                   {item.title}
