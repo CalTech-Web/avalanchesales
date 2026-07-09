@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { company, footerColumns } from "@/lib/data";
 
@@ -6,9 +7,13 @@ export default function Footer() {
     <footer className="bg-near-black text-zinc-300">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-6 lg:px-8">
         <div className="lg:col-span-2">
-          <span className="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">
-            Avalanche<span className="text-orange">Sales</span>
-          </span>
+          <Image
+            src="/images/logos/avalanche-logo-white.png"
+            alt="Avalanche Sales"
+            width={800}
+            height={400}
+            className="h-14 w-auto"
+          />
           <p className="mt-4 max-w-sm text-sm leading-6 text-zinc-400">
             Your AI-powered customer acquisition partner, delivering exclusive,
             human-verified buying opportunities that help your business grow.
