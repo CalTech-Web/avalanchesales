@@ -45,7 +45,8 @@ export default function AcquisitionHub() {
                 x2={left}
                 y2={top}
                 stroke={on ? "#ED751C" : "#d4d4d8"}
-                strokeWidth={on ? 0.9 : 0.4}
+                strokeWidth={on ? 0.55 : 0.4}
+                strokeLinecap="round"
               />
             );
           })}
@@ -83,7 +84,7 @@ export default function AcquisitionHub() {
                 <span
                   className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full ring-4 transition-all ${
                     on
-                      ? "scale-110 bg-orange text-white ring-orange/25"
+                      ? "bg-orange text-white ring-orange/20 shadow-md"
                       : "bg-white text-orange ring-orange/15 shadow-sm"
                   }`}
                 >
