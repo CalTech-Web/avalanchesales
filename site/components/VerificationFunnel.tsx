@@ -11,7 +11,7 @@ export default function VerificationFunnel() {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <div className="space-y-3">
+      <div className="space-y-6 lg:space-y-3">
         {verificationStages.map((stage, i) => {
           const on = i === active;
           return (
@@ -19,15 +19,16 @@ export default function VerificationFunnel() {
               key={stage.title}
               className="lg:grid lg:grid-cols-[1fr_220px] lg:items-center lg:gap-x-8"
             >
-              {/* Funnel band */}
+              {/* Funnel band. Full width on mobile; only narrows into a funnel
+                  on desktop, where the side callouts complete the shape. */}
               <button
                 type="button"
                 onMouseEnter={() => setActive(i)}
                 onFocus={() => setActive(i)}
                 onClick={() => setActive(i)}
                 aria-pressed={on}
-                style={{ width: WIDTHS[i] }}
-                className={`mx-auto flex h-16 items-center justify-center rounded-lg px-4 text-center transition-all ${
+                style={{ "--fw": WIDTHS[i] } as React.CSSProperties}
+                className={`mx-auto flex h-16 w-full items-center justify-center rounded-lg px-4 text-center transition-all lg:w-[var(--fw)] ${
                   on
                     ? "bg-gradient-to-br from-orange to-orange-dark text-white shadow-md"
                     : "bg-zinc-100 text-near-black hover:bg-orange/10"
@@ -62,10 +63,7 @@ export default function VerificationFunnel() {
 
       {/* Funnel outcome */}
       <div className="mt-3 lg:grid lg:grid-cols-[1fr_220px] lg:items-center lg:gap-x-8">
-        <div
-          style={{ width: "40%" }}
-          className="mx-auto flex h-16 items-center justify-center rounded-lg bg-near-black px-4 text-center shadow-lg"
-        >
+        <div className="mx-auto flex h-16 w-full items-center justify-center rounded-lg bg-near-black px-4 text-center shadow-lg lg:w-[40%]">
           <span className="text-sm font-bold text-white sm:text-base">
             {verificationOutcome}
           </span>

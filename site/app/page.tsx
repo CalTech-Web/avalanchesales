@@ -265,7 +265,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="How We Verify"
             title="Every Lead Runs the Verification Gauntlet"
-            description="Before an opportunity ever reaches you, it passes through five layers of automated and human verification. Hover each stage to see what we check."
+            description="Before an opportunity ever reaches you, it passes through five layers of automated and human verification. Select each stage to see what we check."
           />
           <div className="mt-14">
             <VerificationFunnel />
