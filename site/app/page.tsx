@@ -9,6 +9,7 @@ import DashStat from "@/components/DashStat";
 import AcquisitionHub from "@/components/AcquisitionHub";
 import VerificationFunnel from "@/components/VerificationFunnel";
 import PortalsShowcase from "@/components/PortalsShowcase";
+import AdSourcesBanner from "@/components/AdSourcesBanner";
 import {
   caseStudies,
   caseStudyDisclosure,
@@ -170,6 +171,27 @@ export default function Home() {
               partner, not simply another lead vendor.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* 3b. Buyer Ad Sources banner */}
+      <section className="border-y border-zinc-100 bg-white py-14">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-orange-text">
+              Buyer Ad Sources
+            </p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-near-black sm:text-3xl">
+              Where We Generate Your Buyers
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-zinc-600">
+              We reach high-intent buyers across every major advertising and
+              search platform, then route them straight to your business.
+            </p>
+          </div>
+        </div>
+        <div className="mt-10">
+          <AdSourcesBanner />
         </div>
       </section>
 
