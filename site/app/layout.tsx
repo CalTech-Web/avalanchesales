@@ -59,7 +59,6 @@ const organizationJsonLd = {
   url: "https://avalanchesales.com",
   logo: "https://avalanchesales.com/images/logos/avalanche-logo-square-orange.png",
   image: "https://avalanchesales.com/images/logos/avalanche-logo-square-orange.png",
-  telephone: "+1-877-499-9111",
   email: "info@AvalancheSales.com",
   description: defaultDescription,
   foundingDate: "1999",

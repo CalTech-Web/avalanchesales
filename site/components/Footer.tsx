@@ -19,9 +19,6 @@ export default function Footer() {
             human-verified buying opportunities that help your business grow.
           </p>
           <div className="mt-6 space-y-2 text-sm text-zinc-400">
-            <a href={company.phoneHref} className="block hover:text-orange">
-              {company.phone}
-            </a>
             <a
               href={`mailto:${company.email}`}
               className="block break-words hover:text-orange"

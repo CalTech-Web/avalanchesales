@@ -52,7 +52,7 @@ export default function ContactForm({
       setSubmitted(true);
     } catch {
       setError(
-        "Something went wrong sending your message. Please email info@AvalancheSales.com or call 877.499.9111."
+        "Something went wrong sending your message. Please email info@AvalancheSales.com and we will get right back to you."
       );
       (window as unknown as { turnstile?: { reset: () => void } }).turnstile?.reset();
     } finally {

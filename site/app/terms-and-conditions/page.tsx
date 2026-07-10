@@ -104,13 +104,6 @@ export default function TermsPage() {
                 className="text-orange hover:text-orange-dark"
               >
                 {company.email}
-              </a>{" "}
-              or{" "}
-              <a
-                href={company.phoneHref}
-                className="text-orange hover:text-orange-dark"
-              >
-                {company.phone}
               </a>
               .
             </p>

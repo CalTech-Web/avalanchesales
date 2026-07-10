@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { company, navLinks, type NavItem } from "@/lib/data";
+import { navLinks, type NavItem } from "@/lib/data";
 
 function isActive(pathname: string, item: NavItem): boolean {
   if (item.href === "/") return pathname === "/";
@@ -103,14 +103,8 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Desktop phone + CTA (surfaced at md, nav still hidden until lg) */}
+        {/* Desktop CTA (surfaced at md, nav still hidden until lg) */}
         <div className="hidden items-center gap-4 md:flex lg:gap-5">
-          <a
-            href={company.phoneHref}
-            className="hidden text-sm font-semibold text-near-black transition-colors hover:text-orange-text lg:inline"
-          >
-            {company.phone}
-          </a>
           {/* Login: destination not wired up yet */}
           <span className="hidden cursor-pointer text-sm font-semibold text-near-black transition-colors hover:text-orange-text lg:inline">
             Login
@@ -237,13 +231,6 @@ export default function Header() {
             </nav>
 
             <div className="mt-6 flex flex-col gap-3">
-              <a
-                href={company.phoneHref}
-                className="py-2.5 text-base font-semibold text-near-black"
-                onClick={closeMenu}
-              >
-                {company.phone}
-              </a>
               <Link
                 href="/schedule-call-today/"
                 className="rounded-md bg-orange-text px-5 py-3 text-center text-base font-semibold text-white"
