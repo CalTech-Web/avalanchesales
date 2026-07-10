@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
@@ -62,27 +63,44 @@ export default function IndustryInsightsPage() {
   return (
     <>
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            as="h1"
-            eyebrow="Industry Insights"
-            title="Industry Insights"
-            description="Practical knowledge to help growing businesses acquire more customers."
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              The marketplace is constantly changing. Customer behavior evolves.
-              Advertising platforms change. Competition increases.
-            </p>
-            <p>
-              Successful businesses stay ahead by understanding how customers
-              discover, evaluate, and choose the companies they work with.
-            </p>
-            <p>
-              The Avalanche Sales Industry Insights section provides practical
-              information designed specifically for business owners looking to
-              improve customer acquisition and sales growth.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                as="h1"
+                align="left"
+                eyebrow="Industry Insights"
+                title="Industry Insights"
+                description="Practical knowledge to help growing businesses acquire more customers."
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  The marketplace is constantly changing. Customer behavior
+                  evolves. Advertising platforms change. Competition
+                  increases.
+                </p>
+                <p>
+                  Successful businesses stay ahead by understanding how
+                  customers discover, evaluate, and choose the companies they
+                  work with.
+                </p>
+                <p>
+                  The Avalanche Sales Industry Insights section provides
+                  practical information designed specifically for business
+                  owners looking to improve customer acquisition and sales
+                  growth.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-md lg:max-w-full">
+              <Image
+                src="/images/products/data-leads-image.jpg"
+                alt="Analyzing customer acquisition data and industry trends"
+                width={700}
+                height={467}
+                className="h-auto w-full rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </div>
         </div>
       </section>

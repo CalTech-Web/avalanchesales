@@ -1,8 +1,32 @@
+import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
 import { industryChallenges, industryGroups } from "@/lib/data";
 import { pageMetadata } from "@/lib/metadata";
+
+const industryImages: Record<string, { src: string; alt: string }> = {
+  "home-service-companies": {
+    src: "/images/gallery/case-study-hvac.png",
+    alt: "Home service technician greeting a homeowner at the front door",
+  },
+  "insurance-financial-services": {
+    src: "/images/gallery/case-study-finance.png",
+    alt: "Financial professional meeting with a client in an office",
+  },
+  "professional-services": {
+    src: "/images/gallery/case-study-real-estate.png",
+    alt: "Real estate professional handing over keys to new homeowners",
+  },
+  "healthcare-wellness": {
+    src: "/images/gallery/case-study-healthcare.png",
+    alt: "Healthcare provider greeting a patient in a medical office",
+  },
+  "business-commercial-services": {
+    src: "/images/gallery/case-study-coaching.png",
+    alt: "Business professionals shaking hands after a consultation",
+  },
+};
 
 export const metadata = pageMetadata({
   title: "Industries",
@@ -16,34 +40,50 @@ export default function IndustriesPage() {
     <>
       {/* Intro */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            as="h1"
-            eyebrow="Who We Help"
-            title="Customer Acquisition Solutions Built for Growing Businesses"
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              Every business depends on one thing to succeed: consistently
-              acquiring new customers.
-            </p>
-            <p>
-              At Avalanche Sales, we partner with small and medium-sized
-              businesses that want a reliable way to generate qualified sales
-              opportunities without the expense of hiring an in-house marketing
-              department or managing complicated advertising campaigns.
-            </p>
-            <p>
-              Whether you're looking to increase phone calls, schedule more
-              appointments, generate additional estimates, or grow your customer
-              base, our customer acquisition solutions are designed to help your
-              business achieve predictable, long-term growth.
-            </p>
-            <p className="font-semibold text-near-black">
-              No matter your industry, our mission remains the same: helping
-              your business connect with customers who are actively looking for
-              the products and services you provide.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                as="h1"
+                align="left"
+                eyebrow="Who We Help"
+                title="Customer Acquisition Solutions Built for Growing Businesses"
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  Every business depends on one thing to succeed: consistently
+                  acquiring new customers.
+                </p>
+                <p>
+                  At Avalanche Sales, we partner with small and medium-sized
+                  businesses that want a reliable way to generate qualified
+                  sales opportunities without the expense of hiring an
+                  in-house marketing department or managing complicated
+                  advertising campaigns.
+                </p>
+                <p>
+                  Whether you're looking to increase phone calls, schedule
+                  more appointments, generate additional estimates, or grow
+                  your customer base, our customer acquisition solutions are
+                  designed to help your business achieve predictable,
+                  long-term growth.
+                </p>
+                <p className="font-semibold text-near-black">
+                  No matter your industry, our mission remains the same:
+                  helping your business connect with customers who are
+                  actively looking for the products and services you provide.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-md lg:max-w-full">
+              <Image
+                src="/images/gallery/case-study-pic-11.jpg"
+                alt="Team reviewing customer acquisition opportunities across industries"
+                width={700}
+                height={500}
+                className="h-auto w-full rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </div>
           <div className="mt-10 rounded-2xl bg-zinc-50 p-6">
             <h2 className="text-lg font-bold text-near-black">
@@ -63,42 +103,68 @@ export default function IndustriesPage() {
       {/* Industry group sections */}
       <section className="bg-zinc-50 pb-8">
         <div className="mx-auto max-w-5xl space-y-6 px-4 sm:px-6 lg:px-8">
-          {industryGroups.map((group) => (
-            <div
-              key={group.id}
-              id={group.id}
-              className="scroll-mt-24 rounded-2xl border border-zinc-200 bg-white p-8 sm:p-10"
-            >
-              <h2 className="text-2xl font-bold text-near-black sm:text-3xl">
-                {group.title}
-              </h2>
-              <div className="mt-4 space-y-3 text-base leading-7 text-zinc-600">
-                {group.body.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
+          {industryGroups.map((group, index) => {
+            const image = industryImages[group.id];
+            const groupHeader = (
+              <div>
+                <h2 className="text-2xl font-bold text-near-black sm:text-3xl">
+                  {group.title}
+                </h2>
+                <div className="mt-4 space-y-3 text-base leading-7 text-zinc-600">
+                  {group.body.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
-              {group.listIntro && (
-                <p className="mt-4 text-base font-semibold text-near-black">
-                  {group.listIntro}
+            );
+
+            return (
+              <div
+                key={group.id}
+                id={group.id}
+                className="scroll-mt-24 rounded-2xl border border-zinc-200 bg-white p-8 sm:p-10"
+              >
+                {image ? (
+                  <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+                    <div className={index % 2 === 1 ? "lg:order-last" : ""}>
+                      {groupHeader}
+                    </div>
+                    <div className="relative mx-auto w-full max-w-md lg:max-w-full">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={700}
+                        height={467}
+                        className="h-auto w-full rounded-xl object-cover shadow-md"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  groupHeader
+                )}
+                {group.listIntro && (
+                  <p className="mt-4 text-base font-semibold text-near-black">
+                    {group.listIntro}
+                  </p>
+                )}
+                <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {group.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5">
+                      <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
+                        <ServiceIcon name="check" className="h-3 w-3" />
+                      </span>
+                      <span className="text-sm leading-6 text-zinc-700">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-6 text-base leading-7 text-zinc-600">
+                  {group.closer}
                 </p>
-              )}
-              <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                {group.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5">
-                    <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
-                      <ServiceIcon name="check" className="h-3 w-3" />
-                    </span>
-                    <span className="text-sm leading-6 text-zinc-700">
-                      {item}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-base leading-7 text-zinc-600">
-                {group.closer}
-              </p>
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </section>
 

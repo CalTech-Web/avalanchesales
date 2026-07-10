@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
@@ -16,33 +17,48 @@ export default function SolutionsPage() {
     <>
       {/* Intro */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            as="h1"
-            eyebrow="Solutions"
-            title="Customer Acquisition Solutions Built to Help Your Business Grow"
-            description="Stop chasing customers. Start connecting with buyers."
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              Finding new customers consistently is one of the biggest
-              challenges facing small and medium-sized businesses. Many business
-              owners know they need more opportunities but don't have the time,
-              resources, or expertise to manage complex marketing campaigns,
-              advertising platforms, and sales systems.
-            </p>
-            <p>
-              Avalanche Sales provides a simple solution. We help businesses
-              connect with qualified prospects who are actively looking for
-              their products and services through exclusive customer acquisition
-              solutions powered by advanced data intelligence, automation, and
-              proven sales strategies.
-            </p>
-            <p className="font-semibold text-near-black">
-              No marketing department required. No complicated systems to
-              manage. No guessing if your advertising is working. Just qualified
-              opportunities delivered directly to your business.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                as="h1"
+                align="left"
+                eyebrow="Solutions"
+                title="Customer Acquisition Solutions Built to Help Your Business Grow"
+                description="Stop chasing customers. Start connecting with buyers."
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  Finding new customers consistently is one of the biggest
+                  challenges facing small and medium-sized businesses. Many
+                  business owners know they need more opportunities but don't
+                  have the time, resources, or expertise to manage complex
+                  marketing campaigns, advertising platforms, and sales
+                  systems.
+                </p>
+                <p>
+                  Avalanche Sales provides a simple solution. We help
+                  businesses connect with qualified prospects who are actively
+                  looking for their products and services through exclusive
+                  customer acquisition solutions powered by advanced data
+                  intelligence, automation, and proven sales strategies.
+                </p>
+                <p className="font-semibold text-near-black">
+                  No marketing department required. No complicated systems to
+                  manage. No guessing if your advertising is working. Just
+                  qualified opportunities delivered directly to your business.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-md lg:max-w-full">
+              <Image
+                src="/images/products/data-leads-image.jpg"
+                alt="Sales professional reviewing purchase intent data and analytics"
+                width={700}
+                height={467}
+                className="h-auto w-full rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -98,25 +114,39 @@ export default function SolutionsPage() {
 
       {/* Built for business owners */}
       <section className="bg-white py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold tracking-tight text-near-black sm:text-4xl">
-            Built For Business Owners Who Want Growth Without The Complexity
-          </h2>
-          <div className="mt-6 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              You didn't start your business to become a marketing expert. You
-              started it to serve customers, provide value, and build something
-              successful.
-            </p>
-            <p>
-              Avalanche Sales gives you access to the customer acquisition
-              systems, data intelligence, and sales opportunities needed to
-              grow, without the cost and complexity of building everything
-              internally.
-            </p>
-            <p className="font-semibold text-near-black">
-              We become an extension of your business growth strategy.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="relative order-last mx-auto w-full max-w-md lg:order-first lg:max-w-full">
+              <Image
+                src="/images/products/avalanche-service-image.png"
+                alt="Avalanche Sales team member supporting a business owner"
+                width={700}
+                height={467}
+                className="h-auto w-full rounded-2xl object-cover shadow-md"
+              />
+            </div>
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold tracking-tight text-near-black sm:text-4xl">
+                Built For Business Owners Who Want Growth Without The
+                Complexity
+              </h2>
+              <div className="mt-6 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  You didn't start your business to become a marketing
+                  expert. You started it to serve customers, provide value,
+                  and build something successful.
+                </p>
+                <p>
+                  Avalanche Sales gives you access to the customer
+                  acquisition systems, data intelligence, and sales
+                  opportunities needed to grow, without the cost and
+                  complexity of building everything internally.
+                </p>
+                <p className="font-semibold text-near-black">
+                  We become an extension of your business growth strategy.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

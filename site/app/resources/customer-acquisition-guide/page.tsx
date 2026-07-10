@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceIcon from "@/components/ServiceIcon";
@@ -65,28 +66,42 @@ export default function CustomerAcquisitionGuidePage() {
   return (
     <>
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            as="h1"
-            eyebrow="Customer Acquisition Guide"
-            title="The Business Owner's Guide To Customer Acquisition"
-            description="How growing businesses generate more customers without the complexity of traditional marketing."
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              Every business owner wants the same thing: more customers, more
-              sales, and more predictable revenue.
-            </p>
-            <p>
-              The challenge is finding a reliable way to consistently generate
-              opportunities without wasting time and money trying to figure out
-              complicated marketing systems.
-            </p>
-            <p>
-              The Avalanche Sales Customer Acquisition Guide helps business
-              owners understand how modern customer acquisition works and how to
-              build a more predictable growth strategy.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                as="h1"
+                align="left"
+                eyebrow="Customer Acquisition Guide"
+                title="The Business Owner's Guide To Customer Acquisition"
+                description="How growing businesses generate more customers without the complexity of traditional marketing."
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  Every business owner wants the same thing: more customers,
+                  more sales, and more predictable revenue.
+                </p>
+                <p>
+                  The challenge is finding a reliable way to consistently
+                  generate opportunities without wasting time and money
+                  trying to figure out complicated marketing systems.
+                </p>
+                <p>
+                  The Avalanche Sales Customer Acquisition Guide helps
+                  business owners understand how modern customer acquisition
+                  works and how to build a more predictable growth strategy.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-xs lg:max-w-sm">
+              <Image
+                src="/images/gallery/avalanche-web-lady-flip.png"
+                alt="Avalanche Sales representative pointing toward the guide"
+                width={483}
+                height={1000}
+                className="h-auto w-full max-w-full"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -155,33 +155,47 @@ export default function AboutPage() {
 
       {/* Experience */}
       <section className="bg-zinc-50 py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="Experience Built Through Decades of Sales and Marketing Evolution"
-            title="Understanding How Customers Buy Has Always Been Our Focus"
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              The way businesses attract customers has changed dramatically over
-              the past two decades.
-            </p>
-            <p>
-              From traditional direct response marketing and outbound sales to
-              search marketing, social media, digital advertising, automation,
-              and AI-powered customer acquisition, our ownership team has been
-              involved in the evolution of how businesses connect with buyers
-              since 1999.
-            </p>
-            <p>
-              Over that time, we have built, managed, and optimized sales and
-              marketing systems across both consumer and business markets. We've
-              experienced firsthand what works, what doesn't, and what it takes
-              to create consistent customer acquisition in an increasingly
-              competitive marketplace.
-            </p>
-            <p className="font-semibold text-near-black">
-              Avalanche Sales was created from that experience.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                align="left"
+                eyebrow="Experience Built Through Decades of Sales and Marketing Evolution"
+                title="Understanding How Customers Buy Has Always Been Our Focus"
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  The way businesses attract customers has changed
+                  dramatically over the past two decades.
+                </p>
+                <p>
+                  From traditional direct response marketing and outbound
+                  sales to search marketing, social media, digital
+                  advertising, automation, and AI-powered customer
+                  acquisition, our ownership team has been involved in the
+                  evolution of how businesses connect with buyers since 1999.
+                </p>
+                <p>
+                  Over that time, we have built, managed, and optimized sales
+                  and marketing systems across both consumer and business
+                  markets. We've experienced firsthand what works, what
+                  doesn't, and what it takes to create consistent customer
+                  acquisition in an increasingly competitive marketplace.
+                </p>
+                <p className="font-semibold text-near-black">
+                  Avalanche Sales was created from that experience.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-xs lg:max-w-sm">
+              <Image
+                src="/images/gallery/how-it-started.png"
+                alt="How Avalanche Sales started: an early computer running the first Avalanche system"
+                width={500}
+                height={483}
+                className="h-auto w-full rounded-xl"
+              />
+            </div>
           </div>
         </div>
       </section>

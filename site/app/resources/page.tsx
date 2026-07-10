@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import CtaButton from "@/components/CtaButton";
 import SectionHeading from "@/components/SectionHeading";
@@ -17,30 +18,45 @@ export default function ResourcesPage() {
     <>
       {/* Intro */}
       <section className="bg-white py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            as="h1"
-            eyebrow="Resources"
-            title="Your Guide to Better Customer Acquisition"
-            description="Learn how growing businesses find more customers, improve sales, and build predictable revenue."
-          />
-          <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
-            <p>
-              Running a business is challenging enough without trying to keep up
-              with constantly changing marketing platforms, advertising
-              strategies, and sales technology.
-            </p>
-            <p>
-              The Avalanche Sales Resource Center provides practical
-              information, insights, and tools designed to help business owners
-              understand customer acquisition and make better decisions about
-              growing their business.
-            </p>
-            <p>
-              Whether you're looking for answers about our process, learning how
-              customer acquisition works, or exploring strategies to improve
-              your sales pipeline, our resources are here to help.
-            </p>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl">
+              <SectionHeading
+                as="h1"
+                align="left"
+                eyebrow="Resources"
+                title="Your Guide to Better Customer Acquisition"
+                description="Learn how growing businesses find more customers, improve sales, and build predictable revenue."
+              />
+              <div className="mt-8 space-y-4 text-base leading-7 text-zinc-600">
+                <p>
+                  Running a business is challenging enough without trying to
+                  keep up with constantly changing marketing platforms,
+                  advertising strategies, and sales technology.
+                </p>
+                <p>
+                  The Avalanche Sales Resource Center provides practical
+                  information, insights, and tools designed to help business
+                  owners understand customer acquisition and make better
+                  decisions about growing their business.
+                </p>
+                <p>
+                  Whether you're looking for answers about our process,
+                  learning how customer acquisition works, or exploring
+                  strategies to improve your sales pipeline, our resources
+                  are here to help.
+                </p>
+              </div>
+            </div>
+            <div className="relative mx-auto w-full max-w-md lg:max-w-full">
+              <Image
+                src="/images/gallery/case-study-saas.jpg"
+                alt="Team reviewing helpful customer acquisition resources"
+                width={700}
+                height={467}
+                className="h-auto w-full rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </div>
         </div>
       </section>
