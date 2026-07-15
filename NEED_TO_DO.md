@@ -1,7 +1,12 @@
 # Need To Do — Avalanche Sales
 
 ## Launch
-- Point the custom domain avalanchesales.com (and www) at Vercel. The site currently serves on avalanchesales.vercel.app only. The Turnstile widget and forms config already include avalanchesales.com, so the contact form will keep working after the DNS cutover.
+- Waiting on the domain owner (Ken Davis) to make the DNS change. avalanchesales.com and www.avalanchesales.com are now attached and verified on the Vercel project, and both hostnames were confirmed serving the correct site from the Vercel edge. The Turnstile widget and forms config already include avalanchesales.com, so the contact form will keep working after the cutover.
+- DNS is NOT at Namecheap. avalanchesales.com is registered at Bluehost with nameservers ns1.bluehost.com / ns2.bluehost.com, so the zone is edited in Bluehost, not Namecheap. Editing records in Namecheap would have no effect. Do not switch the nameservers to Namecheap: that would drop the whole zone (MX, mail A record, SPF) and break email.
+- Records to change in the Bluehost zone editor, website only:
+  - Apex avalanchesales.com: A record 162.241.30.68 becomes 216.150.1.1
+  - www.avalanchesales.com: currently an A record to 162.241.30.68, replace with CNAME to cname.vercel-dns.com
+- Leave every mail record alone: MX (mail.avalanchesales.com), the mail.avalanchesales.com A record (162.241.30.68), and the SPF TXT record. Mail is unaffected because the MX points at the mail host by name, not at the apex A record. The SPF record (v=spf1 a mx include:websitewelcome.com ~all) still passes after the cutover via its mx mechanism, so it does not need editing.
 
 ## Content (pending from Ken Davis)
 - Real case studies and testimonials. The six case study records shown on the homepage Results section and on /resources/case-studies are illustrative composites carried over from the original site. They now carry a "Representative results based on typical client outcomes." disclosure, but must be replaced with real, attributable results and named testimonials when Ken Davis provides them.
